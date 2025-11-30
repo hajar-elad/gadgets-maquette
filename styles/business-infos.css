@@ -1,0 +1,42 @@
+.business-infos-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    height: 83vh;
+    background-image: linear-gradient(to right, rgb(91, 151, 118), rgb(183, 230, 204), rgb(64, 187, 119));
+
+}
+
+.business-infos-title {
+    font-size: xx-large;
+}
+
+.b-i-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    font-size: large;
+}
+
+.b-i-icons {
+    width: 55px;
+    border-radius: 29.5px;
+    border: solid 1px whitesmoke;
+}
+
+.best,
+.fast-delivery,
+.save {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+@media (max-width: 770px) {
+
+    .business-infos-main {
+       flex-direction: column;
+    }
+
+}
