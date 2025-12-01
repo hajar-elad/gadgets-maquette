@@ -6,7 +6,7 @@ function displayProducts(){
     products.forEach((product) => {
         html += `
         <div class="product">
-           <img class="product-image" src= "./${product.image}"/>
+           <img class="product-image" src= "${product.image}"/>
            <div class="Product-infos">
               <div class="product-name" >${product.name}</div>
               <div class="product-price">${(product.price).toFixed(2)} MAD</div>
@@ -26,3 +26,4 @@ function displayProducts(){
 
 
 displayProducts();
+
