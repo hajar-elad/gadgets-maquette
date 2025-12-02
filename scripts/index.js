@@ -24,6 +24,4 @@ function displayProducts(){
       console.log(html);
 }
 
-
 displayProducts();
-

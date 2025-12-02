@@ -3,8 +3,9 @@
     align-items: center;
     justify-content: center;
     gap: 75px;
-    height: 83vh;
+    height: 73vh;
     background-image: linear-gradient(to right, rgb(91, 151, 118), rgb(183, 230, 204), rgb(64, 187, 119));
+    padding: 3px;
 
 }
 

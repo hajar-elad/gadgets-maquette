@@ -1,0 +1,46 @@
+footer {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+}
+
+.location-icon, .whatsapp-icon, .email-icon {
+    width: 35px;
+}
+
+.gmap_iframe {
+    width: 700px;
+    height: 321px;
+}
+
+.contact {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+}
+
+.contact-us{
+    text-decoration: underline;
+}
+
+.phone-nbr,
+.find-us,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.copyright {
+    text-align: end;
+}
