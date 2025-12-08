@@ -1,9 +1,15 @@
 import {products} from '../scripts/data-products.js'
 
-function displayProducts(){
 
+function pageDisplay(pageNbr){
     let html = '';
-    products.forEach((product) => {
+    const itemsPerPage = 12;
+    const startIndex = (pageNbr -1) * itemsPerPage;
+    const endIndex = pageNbr * itemsPerPage;
+    const productsToDisplay = products.slice(startIndex,endIndex);
+    console.log(productsToDisplay);
+
+    productsToDisplay.forEach((product) => {
         html += `
         <div class="product">
            <img class="product-image" src= "${product.image}"/>
@@ -21,7 +27,22 @@ function displayProducts(){
 
     document.querySelector('.products')
       .innerHTML = html;
-      console.log(html);
 }
 
-displayProducts();
+ // Display Page By Default 
+pageDisplay(1);
+
+function updatePageDisplay(){
+    const numbers = document.querySelectorAll('.page-nbr');
+    let pageNbr = 1;
+    numbers.forEach((number) => {
+        number.addEventListener('click', () => {
+            pageNbr = number.innerHTML;
+            pageDisplay(pageNbr)
+        })
+    })
+}
+
+// Display Updated Page
+updatePageDisplay();
+

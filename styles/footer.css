@@ -31,7 +31,7 @@ footer {
 
 .contact-us{
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 3px;
 }
 
 .phone-nbr,
@@ -44,5 +44,4 @@ footer {
 
 .copyright {
     text-align: end;
-
 }

@@ -1,0 +1,14 @@
+.pagination {
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.page-nbr {
+    cursor: pointer;
+    color: rgb(7, 160, 76);
+}
